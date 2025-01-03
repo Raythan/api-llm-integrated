@@ -35,7 +35,15 @@
                 "--project",
                 "${workspaceFolder}/llm-integrated.csproj"
             ],
-            "problemMatcher": "$msCompile"
+            "problemMatcher": "$msCompile",
+            "isBackground": true,
+            "dependsOn": "openSwagger"
+        },
+        {
+            "label": "openSwagger",
+            "type": "shell",
+            "command": "sleep 5 && start http://localhost:5000/swagger",
+            "problemMatcher": []
         }
     ]
 }

@@ -1,8 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using llm_integrated.Models;
-using llm_integrated.Services;
-using System.Collections.Generic;
 using llm_integrated.Interfaces;
+using System.Collections.Generic;
 
 namespace llm_integrated.Controllers
 {
